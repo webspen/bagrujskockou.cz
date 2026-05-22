@@ -34,12 +34,12 @@ export const pricing = {
         },
         {
             label: "Zapůjčení bagru (bez obsluhy a pohonných hmot)",
-            lines: ["2.000,- Kč/den", "3.500,- Kč/víkend"],
+            lines: ["2.300,- Kč/den", "4.000,- Kč/víkend"],
         },
         {
             label: "Doprava k zákazníkovi a zpět",
             lines: [
-                "500,-Kč (Český Krumlov a vzdálenost do 10ti km.) Nad 10km cena dle domluvy.",
+                "700,-Kč (Český Krumlov a vzdálenost do 10ti km.) Nad 10km cena dle domluvy.",
             ],
         },
     ],
