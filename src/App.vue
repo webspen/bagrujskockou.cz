@@ -6,18 +6,21 @@ import Contact from "./blocks/Contact.vue"
 import Gallery from "./blocks/Gallery.vue"
 import Training from "./blocks/Training.vue"
 import Footer from "./blocks/Footer.vue"
+import { useReveal } from "./util/use-reveal.js"
+
+useReveal()
 </script>
 
 <template>
 
 <Nav />
-<div class="z-10 lg:text-lg">
+<main class="z-10">
     <Landing />
     <Pricing />
     <Training />
     <Contact />
     <Gallery />
-</div>
+</main>
 <Footer />
 
 </template>
