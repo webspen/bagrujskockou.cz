@@ -74,7 +74,7 @@ onBeforeUnmount(() => {
             </ul>
 
             <a
-                class="hidden lg:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-brand-500 text-ink-950 font-semibold text-sm hover:bg-brand-400 hover:shadow-brand-glow transition-all"
+                class="hidden lg:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-brand-500 text-white font-semibold text-sm hover:bg-brand-400 hover:shadow-brand-glow transition-all"
                 :href="contact.phone.href"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
@@ -109,14 +109,14 @@ onBeforeUnmount(() => {
                         <a
                             @click="open = false"
                             :href="route.path"
-                            class="block px-4 py-3 rounded-md text-white/90 bg-white/5 hover:bg-brand-500 hover:text-ink-950 font-medium transition-colors"
+                            class="block px-4 py-3 rounded-lg text-white/90 bg-white/5 hover:bg-brand-500 hover:text-white font-medium transition-colors"
                         >{{ route.name }}</a>
                     </li>
                     <li class="pt-2">
                         <a
                             @click="open = false"
                             :href="contact.phone.href"
-                            class="flex items-center justify-center gap-2 px-4 py-3 rounded-md bg-brand-500 text-ink-950 font-semibold"
+                            class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-brand-500 text-white font-semibold"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />

@@ -4,15 +4,16 @@ import bobcatLogoUrl from "../assets/bobcat-logo.png"
 </script>
 
 <template>
-    <section id="domu" class="relative overflow-hidden bg-ink-50 pt-24 lg:pt-32 pb-16 lg:pb-24">
+    <section id="domu" class="relative overflow-hidden bg-ink-50">
         <!-- Subtle warm grid background -->
         <div class="absolute inset-0 bg-grid-warm opacity-60 pointer-events-none"></div>
-        <!-- Decorative amber blob -->
+        <!-- Decorative blob -->
         <div class="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-brand-400/20 blur-3xl pointer-events-none"></div>
 
+        <div class="relative min-h-screen flex flex-col pt-24 lg:pt-28 pb-8">
         <Transition enter-from-class="translate-y-6 opacity-0"
             enter-active-class="transition duration-700 ease-out" appear>
-            <div class="relative mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div class="relative flex-1 w-full mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                 <div class="lg:col-span-7 order-2 lg:order-1">
                     <span class="accent-bar mb-6"></span>
 
@@ -66,9 +67,9 @@ import bobcatLogoUrl from "../assets/bobcat-logo.png"
         </Transition>
 
         <!-- Scroll hint -->
-        <div class="hidden lg:flex justify-center mt-16">
+        <div class="relative hidden lg:flex justify-center pt-12">
             <a href="/#bobcat-e19"
-                class="group flex h-12 w-12 items-center justify-center rounded-full bg-ink-900 text-white hover:bg-brand-500 hover:text-ink-950 hover:scale-110 transition-all"
+                class="group flex h-12 w-12 items-center justify-center rounded-full bg-ink-900 text-white hover:bg-brand-500 hover:text-white hover:scale-110 transition-all"
                 aria-label="Posunout dolů">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                     stroke-width="2" stroke="currentColor" class="w-5 h-5">
@@ -76,6 +77,7 @@ import bobcatLogoUrl from "../assets/bobcat-logo.png"
                         d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
                 </svg>
             </a>
+        </div>
         </div>
 
         <!-- BOBCAT E19 feature section -->

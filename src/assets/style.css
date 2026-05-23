@@ -50,11 +50,11 @@
     }
 
     .btn {
-        @apply inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-semibold text-sm tracking-wide transition-all duration-200;
+        @apply inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm tracking-wide transition-all duration-200;
     }
 
     .btn-primary {
-        @apply btn bg-brand-500 text-ink-950 hover:bg-brand-400 hover:shadow-brand-glow active:translate-y-[1px];
+        @apply btn bg-brand-500 text-white hover:bg-brand-400 hover:shadow-brand-glow active:translate-y-[1px];
     }
 
     .btn-ghost-light {
