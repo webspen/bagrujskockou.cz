@@ -8,13 +8,13 @@ import { pricing } from "../config/site"
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ink-200 to-transparent"></div>
 
     <div class="container-tight">
-        <div class="reveal max-w-2xl">
+        <div class="reveal max-w-2xl mx-auto text-center">
             <span class="accent-bar mb-5"></span>
             <h2 class="heading text-ink-900">Ceník</h2>
             <p class="mt-5 text-base lg:text-lg text-ink-700 leading-relaxed">{{ pricing.notice }}</p>
         </div>
 
-        <div class="reveal mt-12 lg:mt-14">
+        <div class="reveal mt-12 lg:mt-14 mx-auto max-w-5xl">
             <dl class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5">
                 <div
                     v-for="(item, i) in pricing.items"

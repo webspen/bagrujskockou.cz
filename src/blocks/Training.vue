@@ -70,9 +70,9 @@ const currentId = ref(videos[0].id)
 
             <div class="reveal mt-12 lg:mt-16 grid lg:grid-cols-12 gap-6 lg:gap-10">
                 <!-- Video selector list -->
-                <div class="lg:col-span-5 order-2 lg:order-1">
+                <div class="lg:col-span-7 order-2 lg:order-1">
                     <div class="rounded-xl bg-ink-800/60 border border-white/10 backdrop-blur-sm overflow-hidden">
-                        <ul class="max-h-[28rem] lg:max-h-[34rem] overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-brand-500/60 scrollbar-track-ink-800 divide-y divide-white/5">
+                        <ul class="divide-y divide-white/5">
                             <li v-for="{ name, id } in videos" :key="id">
                                 <button
                                     @click="currentId = id"
@@ -109,7 +109,7 @@ const currentId = ref(videos[0].id)
                 </div>
 
                 <!-- Video player -->
-                <div class="lg:col-span-7 order-1 lg:order-2">
+                <div class="lg:col-span-5 order-1 lg:order-2">
                     <div class="relative rounded-xl overflow-hidden bg-ink-800 border border-white/10 shadow-card-hover">
                         <Video :id="currentId" />
                     </div>

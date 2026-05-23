@@ -86,10 +86,21 @@ if (images.length === 0) {
                                     {{ currentIndex + 1 }} / {{ images.length }}
                                 </span>
                             </div>
-                            <div class="relative bg-ink-100">
-                                <img :src="dialogImage.src"
-                                    :alt="dialogImage.alt || 'Image'"
-                                    class="w-full max-h-[70vh] object-contain" />
+                            <div class="relative bg-ink-100 overflow-hidden">
+                                <Transition
+                                    mode="out-in"
+                                    enter-active-class="transition duration-200 ease-out"
+                                    leave-active-class="transition duration-150 ease-in"
+                                    enter-from-class="opacity-0 scale-[0.98]"
+                                    enter-to-class="opacity-100 scale-100"
+                                    leave-from-class="opacity-100 scale-100"
+                                    leave-to-class="opacity-0 scale-[0.98]"
+                                >
+                                    <img :key="currentIndex"
+                                        :src="dialogImage.src"
+                                        :alt="dialogImage.alt || 'Image'"
+                                        class="w-full max-h-[70vh] object-contain" />
+                                </Transition>
 
                                 <button
                                     type="button"
